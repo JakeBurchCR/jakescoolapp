@@ -1,0 +1,14 @@
+<%= form_with model: [ @notebook, @notebook.pages.build ] do |form| %>
+  <strong>Add Page</strong>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <p>
+    <%= form.submit class: "action-button primary" %>
+  </p>
+<% end %>

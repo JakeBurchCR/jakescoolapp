@@ -1,0 +1,11 @@
+<h1>Your notebooks</h1>
+<ul class="notebook-list">
+  <% @notebooks.each do |notebook| %>
+    <li class="notebook" style="background-color: #<%= notebook.color %>">
+      <%= link_to notebook.title, notebook %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Notebook", new_notebook_path, class: "action-button primary" %>
+<%= link_to "Logout", users_logout_path, class: "action-button" %>

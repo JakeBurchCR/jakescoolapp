@@ -1,0 +1,16 @@
+ <div class="page">
+  <div class="top-content">
+    <p>
+      <strong><%= page.title %></strong>
+    </p>
+    <p class="page-body">
+      <%= page.body %>
+    </p>
+  </div>
+  <p>
+    <%= link_to 'Delete Page', [page.notebook, page],
+        method: :delete,
+        data: { confirm: "Are you sure?" },
+        class: 'action-button' %>
+  </p>
+</div>

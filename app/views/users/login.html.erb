@@ -1,0 +1,7 @@
+<h1>Log in</h1>
+
+<div class="form-container">
+  <%= render "form", user: @user %>
+  <br>
+  <%= link_to "Create Account", users_new_path(@user), class: "action-button" %>
+</div>

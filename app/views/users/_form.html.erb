@@ -1,0 +1,13 @@
+<%= form_with model: user do |form| %>
+  <p>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+  </p>
+  <p>
+    <%= form.label :password %><br>
+    <%= form.password_field :password %>
+  </p>
+  <p>
+    <%= form.submit "Login", class: "action-button primary" %>
+  </p>
+<% end %>
